@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.quiz-app{
+    margin: 20px auto;
+    width: 800px;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+.quiz-app .quiz-info{
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom:5px;
+}
+
+/* .quiz-app .quiz-info .count{
+    flex:1;
+    text-align: right;
+    
+} */
+.quiz-app .quiz-area{
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 15px;
+}
+.quiz-app .quiz-area h2{
+    margin: 0;
+}
+
+.quiz-app .answers-area{
+    background-color: #fff;
+    padding: 0 20px 20px ;
+}
+.quiz-app .answers-area .answer{
+    background-color: #f9f9f9;
+    padding: 15px;
+}
+.quiz-app .answers-area .answer:not(:last-child){
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.quiz-app .answers-area .answer input[type="radio"]:checked+label{
+    color: #0075ff;
+}
+.quiz-app .answers-area .answer label{
+    cursor: pointer;
+    font-weight: bold;
+    color: #4c4c4c;
+    font-size: 14px;
+    margin-left: 5px;
+    position: relative;
+    top: -1px;
+}
+.quiz-app .submit-button{
+    background-color: #0075ff;
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.quiz-app .submit-button:focus{
+    outline: none;
+}
+.quiz-app .bullets{
+    border-top: 1px solid #dfdfdf;
+    background-color: #fff;
+    display: flex;
+    padding: 15px;
+}
+.quiz-app .bullets .spans{
+    display: flex;
+    flex: 1;
+
+}
+.quiz-app .bullets .spans span{
+    width: 20px;
+    height: 20px;
+    background-color: #dfdfdf;
+    margin-right: 5px;
+    border-radius: 50%;
+
+}
+.quiz-app .bullets .spans span.on{
+    background-color: #0075ff;
+}
+.quiz-app .results{
+    padding-top: 15px;
+}
+.quiz-app .results span{
+    font-weight: bold;
+    
+}
+.quiz-app .results span.perfect{
+    color:green;
+
+}
+.quiz-app .results span.bad{
+    color: red;
+}
+.quiz-app .results span.good{
+    color: #0075ff;
+}
+
+
+label, input[type="radio"] {
+    line-height: 2.1ex;
+ }
+ 
+ input[type="radio"]{
+     position: absolute;
+     left: -999em;
+ }
+ 
+ input[type="radio"] + label{
+     position: relative;
+     overflow: hidden;
+     cursor: pointer;
+ }
+ 
+ input[type="radio"] + label::before{
+    content: "";
+    display: inline-block;
+    vertical-align: -25%;
+    height: 2ex;
+    width: 2ex;
+    background-color: white;
+    border: 1px solid rgb(166, 166, 166);
+    border-radius: 4px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
+    margin-right: 0.5em;
+ }
+ 
+ input[type="radio"]:checked + label::before {
+    background: radial-gradient(circle at center, #0075ff .6ex, white .7ex);
+ }
+ 
+ input[type="radio"] + label::before {
+    border-radius: 50%;
+ }
+ 
+ 
+ 
+
+
